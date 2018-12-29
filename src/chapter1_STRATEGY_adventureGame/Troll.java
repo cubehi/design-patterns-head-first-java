@@ -11,8 +11,7 @@ package chapter1_STRATEGY_adventureGame;
  */
 public class Troll extends Character {
 
-	@Override
-	public void fight() {
+	public Troll() {
+		weapon = new AxeBehavior();
 	}
-
 }

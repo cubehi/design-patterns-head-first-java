@@ -10,11 +10,13 @@ package chapter1_STRATEGY_adventureGame;
  * @author Cube
  */
 public abstract class Character {
-	private WeaponBehavior weapon;
+	WeaponBehavior weapon;
 
 	public void setWeapon(WeaponBehavior w) {
 		weapon = w;
 	}
 
-	public abstract void fight();
+	public void fight() {
+		weapon.useWeapon();
+	};
 }

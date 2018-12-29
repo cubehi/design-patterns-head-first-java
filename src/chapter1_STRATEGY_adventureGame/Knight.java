@@ -11,8 +11,7 @@ package chapter1_STRATEGY_adventureGame;
  */
 public class Knight extends Character {
 
-	@Override
-	public void fight() {
+	public Knight() {
+		weapon = new BowAndArrowBehavior();
 	}
-
 }

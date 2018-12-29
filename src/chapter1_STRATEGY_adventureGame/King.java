@@ -10,9 +10,7 @@ package chapter1_STRATEGY_adventureGame;
  * @author Cube
  */
 public class King extends Character {
-
-	@Override
-	public void fight() {
+	public King() {
+		weapon = new SwordBehavior();
 	}
-
 }
